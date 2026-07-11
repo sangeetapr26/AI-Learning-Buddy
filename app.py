@@ -227,7 +227,7 @@ def transcribe_audio(audio_path):
 # 9. HEADER
 
 st.title(
-    "Lecture Voice-to-Notes Generator"
+    "AI Learning Buddy"
 )
 
 

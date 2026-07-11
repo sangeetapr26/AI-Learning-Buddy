@@ -17,7 +17,7 @@ def generate_docx(
     document = Document()
 
     document.add_heading(
-        "Lecture Voice-to-Notes Generator",
+        "AI Learning Buddy",
         level=0
     )
 

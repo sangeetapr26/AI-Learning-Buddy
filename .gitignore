@@ -1,0 +1,23 @@
+# Secret API keys
+.env
+
+# Virtual environments
+.venv/
+.venv-1/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# VS Code
+.vscode/
+
+# Uploaded audio files
+uploads/*
+!uploads/.gitkeep
+
+# Generated output files
+outputs/*
+!outputs/.gitkeep

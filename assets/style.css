@@ -1,0 +1,51 @@
+/* Main container */
+.block-container {
+    max-width: 1200px;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+/* Main title */
+h1 {
+    text-align: center;
+    font-weight: 800;
+}
+
+/* Subtitle */
+.app-subtitle {
+    text-align: center;
+    font-size: 1.15rem;
+    opacity: 0.8;
+    margin-bottom: 2rem;
+}
+
+/* Feature cards */
+.feature-card {
+    padding: 1.3rem;
+    border: 1px solid rgba(128, 128, 128, 0.25);
+    border-radius: 14px;
+    text-align: center;
+    min-height: 130px;
+}
+
+/* Buttons */
+.stButton > button {
+    width: 100%;
+    min-height: 3rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Download buttons */
+.stDownloadButton > button {
+    width: 100%;
+    min-height: 3rem;
+    border-radius: 10px;
+}
+
+/* File uploader */
+[data-testid="stFileUploader"] {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}

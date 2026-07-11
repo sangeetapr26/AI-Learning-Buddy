@@ -60,20 +60,26 @@ create_project_folders()
 
 # 4. LOAD GROQ API KEY
 
+# 4. LOAD GROQ API KEY
+
 load_dotenv()
 
+# Local development: read from .env
 api_key = os.getenv("GROQ_API_KEY")
 
+# Streamlit Community Cloud: read from Streamlit Secrets
 if not api_key:
+    try:
+        api_key = st.secrets["GROQ_API_KEY"]
+    except Exception:
+        api_key = None
 
-    st.error(
-        "GROQ_API_KEY was not found in the .env file."
-    )
-
+if not api_key:
+    st.error("GROQ_API_KEY was not found.")
     st.info(
-        "Add your Groq API key to the .env file and restart the app."
+        "For local development, add it to the .env file. "
+        "For Streamlit Cloud, add it to Streamlit Secrets."
     )
-
     st.stop()
 
 
@@ -1041,7 +1047,7 @@ st.divider()
 
 
 st.caption(
-    "Lecture Voice-to-Notes Generator • "
+    "AI Learning Buddy • "
     "Built with Streamlit, Groq AI and Whisper • "
     "With ❤️ by Sangeeta"
 )
